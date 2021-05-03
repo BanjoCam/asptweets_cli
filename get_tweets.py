@@ -14,6 +14,10 @@ class TweetObject():
 	date = ""
 	links = []
 
+	#
+	#
+
+
 	def __init__(self, blockquote):
 		self.body_text = blockquote.p.text.replace("|", ";")
 		self.get_date_from_tweet(blockquote)
